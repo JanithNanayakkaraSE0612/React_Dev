@@ -19,7 +19,12 @@ function App() {
     //     </a>
     //   </header>
     // </div>
-    <div></div>
+    <>
+    <div>Janith Induwara Nanayakakra
+      <h1>Janith</h1>
+    </div>
+    <p>I'm Janith Nanayakakra Senior Software Engineer</p>
+    </>
   );
 }
 
