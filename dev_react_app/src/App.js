@@ -1,5 +1,6 @@
 // import logo from './logo.svg';
 import './App.css';
+import Main from './Components/Main';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
       <h1>Janith</h1>
     </div>
     <p>I'm Janith Nanayakakra Senior Software Engineer</p>
+    <Main />
     </>
   );
 }
