@@ -1,5 +1,12 @@
-function Main(){
-    return(<div>This is Main Components</div>)
+function Main(props){
+    return(<div>This is Main Components
+        <ul>
+            <li>Java</li>
+            <li>React</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+    </div>)
 }
 
 export default Main

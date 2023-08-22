@@ -26,6 +26,8 @@ function App() {
     </div>
     <p>I'm Janith Nanayakakra Senior Software Engineer</p>
     <Main />
+    <Main />
+    <Main />
     </>
   );
 }
