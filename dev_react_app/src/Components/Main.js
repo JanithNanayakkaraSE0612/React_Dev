@@ -6,6 +6,9 @@ function Main(props){
             <li>CSS</li>
             <li>JavaScript</li>
         </ul>
+        {
+            props.children
+        }
     </div>)
 }
 
