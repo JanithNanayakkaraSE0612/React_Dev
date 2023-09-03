@@ -60,8 +60,8 @@ function App() {
     </Main>
     <Main name="kavindu" city="Tangalla" position="app-developer"/>
     <Main name="Gayani" city= "Elpitiya" position="UI / UX Developer"/> */
-    myData.map((ele)=>{
-      return <Main name={ele.name} city={ele.city} position={ele.position}/>
+    myData.map(({name,city,position})=>{
+      return <Main name={name} city={city} position={position}/>
     })
     }
     </>
