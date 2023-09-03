@@ -31,9 +31,8 @@ function App() {
         I'm Children
       </p>
     </Main>
-    <Main />
-    <Main />
-    <Main />
+    <Main name="kavindu" city="Tangalla" position="app-developer"/>
+    <Main name="Gayani" city= "Elpitiya" position="UI / UX Developer"/>
     </>
   );
 }
