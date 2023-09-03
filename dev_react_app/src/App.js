@@ -2,6 +2,33 @@
 import './App.css';
 import Main from './Components/Main';
 
+const myData = [
+  {
+    name :'Nimal',
+    city :'Matara',
+    position :'app-developer'
+
+  },
+  {
+    name :'Nimal',
+    city :'Matara',
+    position :'app-developer'
+
+  },
+  {
+    name :'Nimal',
+    city :'Matara',
+    position :'app-developer'
+
+  },
+  {
+    name :'Nimal',
+    city :'Matara',
+    position :'app-developer'
+
+  }
+  
+]
 function App() {
   return (
     // <div className="App">
@@ -25,7 +52,7 @@ function App() {
       <h1>Janith</h1>
     </div>
     <p>I'm Janith Nanayakakra Senior Software Engineer</p>
-    <Main>
+    <Main  name="Navindu" city="Galle" position="Web-developer">
       <p>Software Developer</p>
       <p>
         I'm Children
