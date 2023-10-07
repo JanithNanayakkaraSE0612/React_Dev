@@ -2,37 +2,7 @@
 import './App.css';
 import Main from './Components/Main';
 
-const myData = [
-  { 
-    Id: 1234,
-    name :'Nimal',
-    city :'Matara',
-    position :'app-developer'
 
-  },
-  {
-    id : 1235,
-    name :'Nimal',
-    city :'Matara',
-    position :'app-developer'
-
-  },
-  {
-    id : 1236,
-    name :'Nimal',
-    city :'Matara',
-    position :'app-developer'
-
-  },
-  {
-    id : 1237,
-    name :'Nimal',
-    city :'Matara',
-    position :'app-developer'
-
-  }
-  
-]
 function App() {
   return (
     // <div className="App">
@@ -64,8 +34,8 @@ function App() {
     </Main>
     <Main name="kavindu" city="Tangalla" position="app-developer"/>
     <Main name="Gayani" city= "Elpitiya" position="UI / UX Developer"/> */
-    myData.map(({name,city,position},index)=>{
-      return <Main key={index} name={name} city={city} position={position}/>
+    myData.map(({name,city,position,id})=>{
+      return <Main key={id} name={name} city={city} position={position}/>
     })
     }
     </>
