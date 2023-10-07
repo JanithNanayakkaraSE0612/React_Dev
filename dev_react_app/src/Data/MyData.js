@@ -1,4 +1,4 @@
-const myData = [
+export const myData = [
     { 
       Id: 1234,
       name :'Nimal',
@@ -28,4 +28,4 @@ const myData = [
   
     }
     
-  ]
+  ];
