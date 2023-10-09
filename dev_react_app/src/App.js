@@ -35,6 +35,7 @@ function App() {
     <Main name="kavindu" city="Tangalla" position="app-developer"/>
     <Main name="Gayani" city= "Elpitiya" position="UI / UX Developer"/> */
     myData.map(({name,city,position,id})=>{
+      // assign key value
       return <Main key={id} name={name} city={city} position={position}/>
     })
     }
