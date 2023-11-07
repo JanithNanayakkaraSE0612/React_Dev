@@ -1,0 +1,12 @@
+.topicbox{
+    background-color:blueviolet;
+    width: 800px;
+    height: 400px;
+    border-radius: 20px;
+}
+.text{
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    margin-left: 30px;
+}
