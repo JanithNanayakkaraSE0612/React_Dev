@@ -5,16 +5,25 @@ import Home from './pages/Home';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
+  let count = 0;
   return (
-    <Router>
-      <div>
-        <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route path="/About" element={<About />} />
-          <Route path="/Contact" element={<Contact />} />
-        </Routes>
-      </div>
-    </Router>
+    <>
+    <span className='title'>
+      My Counter
+    </span>
+    <p className='subtitle'>The Count is {count}</p>
+    <button className='button'>-</button>
+    <button className='button'>+</button>
+    </>
+    // <Router>
+    //   <div>
+    //     <Routes>
+    //       <Route exact path="/" element={<Home />} />
+    //       <Route path="/About" element={<About />} />
+    //       <Route path="/Contact" element={<Contact />} />
+    //     </Routes>
+    //   </div>
+    // </Router>
   );
 }
 
