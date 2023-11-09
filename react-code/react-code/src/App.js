@@ -6,17 +6,17 @@ import { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
-  const [count,setCount] = useState(0);
-  //let count = 0;
+  // const [count,setCount] = useState(0);
+  // //let count = 0;
 
-  const increment = () =>{
-    //count +=1;
-    setCount(count+1);
-  }
-  const decrement = () =>{
-   // count -=1;  
-   setCount(count-1);
-  }
+  // const increment = () =>{
+  //   //count +=1;
+  //   setCount(count+1);
+  // }
+  // const decrement = () =>{
+  //  // count -=1;  
+  //  setCount(count-1);
+  // }
   return (
     <div>
     <h1>React Bostrap Tutorial</h1>
