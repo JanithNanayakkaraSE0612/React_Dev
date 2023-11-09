@@ -19,7 +19,7 @@ function App() {
   //  setCount(count-1);
   // }
   return (
-    <div>
+    <div className='according'>
     <h1>React Bostrap Tutorial</h1>
     <Accordion defaultActiveKey="0">
     <Accordion.Item eventKey="0">
