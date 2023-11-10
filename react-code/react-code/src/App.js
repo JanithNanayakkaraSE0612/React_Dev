@@ -3,7 +3,7 @@ import Accordion from 'react-bootstrap/Accordion';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Home from './pages/Home';
-import { useState } from 'react';
+import { useState,useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 function buttonClick(){
   console.log("Button is Clicked");
@@ -20,6 +20,11 @@ function App() {
    // count -=1;  
    setCount(count-1);
   }
+  useEffect(()=>{
+    // what is do as a side 
+    console.log('new count is :${count}')
+  },[count]// dependecy array
+  )
   return (
   //   // <div className='according'>
   //   // <h1>React Event Handling</h1>
