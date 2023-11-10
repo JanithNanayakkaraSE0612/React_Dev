@@ -5,7 +5,9 @@ import Contact from './pages/Contact';
 import Home from './pages/Home';
 import { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-
+function buttonClick(){
+  console.log("Button is Clicked");
+}
 function App() {
   // const [count,setCount] = useState(0);
   // //let count = 0;
@@ -20,8 +22,10 @@ function App() {
   // }
   return (
     <div className='according'>
-    <h1>React Bostrap Tutorial</h1>
-    <Accordion defaultActiveKey="0">
+    <h1>React Event Handling</h1>
+    <br></br><hr></hr>
+    <button onClick={buttonClick}>Click Here</button>
+    {/* <Accordion defaultActiveKey="0">
     <Accordion.Item eventKey="0">
       <Accordion.Header>Accordion Item #1</Accordion.Header>
       <Accordion.Body>
@@ -46,7 +50,7 @@ function App() {
         culpa qui officia deserunt mollit anim id est laborum.
       </Accordion.Body>
     </Accordion.Item>
-  </Accordion>
+  </Accordion> */}
   </div>
     // <>
     // <span className='title'>
