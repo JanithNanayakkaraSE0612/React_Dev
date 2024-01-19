@@ -11,7 +11,13 @@ const UsersTable = props =>{
                 </TableRow>
             </TableHead>
             <TableBody>
-                
+                {props.rows.map(row =>(
+                    <TableRow>
+                        <TableCell component='th' scope="row">
+                            {row.id}
+                        </TableCell>
+                    </TableRow>
+                ))}
             </TableBody>
         </Table>
     </TableContainer>
