@@ -16,7 +16,7 @@ const UserForm = props =>{
                 User Form
           </Typography>
         </Grid> 
-        <Grid container spacing={0}>
+        <Grid item xs={12} sm={6}>
           <Typography component={'label'} htmlFor='id'
           sx={{color:'#000000',
         marginRight:'20px',
@@ -26,7 +26,9 @@ display:'block'}}
           >
                 ID
           </Typography>
-          <Input />
+          <Input type='number' id='id' name='id'
+          sx={{width:'400px'}} value={''} onChange={e =>{}}
+          />
         </Grid>
        </Grid>
     );
