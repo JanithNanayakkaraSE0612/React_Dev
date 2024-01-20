@@ -1,7 +1,7 @@
 import { Button, Paper, Table, TableBody, TableCell, TableContainer, TableHead, TableRow } from "@mui/material";
 
 const UsersTable = props =>{
-    <TableContainer component={Paper}>
+    return(  <TableContainer component={Paper}>
         <Table>
             <TableHead>
                 <TableRow>
@@ -30,10 +30,18 @@ const UsersTable = props =>{
                             </Button>
                         </TableCell>
                     </TableRow>
-                ))}
+                ))(
+                    <TableRow sx={{'&:last-child td, &:last-child th' :{border:0}}}>
+                             <TableCell component='th' scope="row">
+                        No Data
+                    </TableCell>
+                    </TableRow>
+                )
+                }
             </TableBody>
         </Table>
-    </TableContainer>
+    </TableContainer>);
+  
 }
 
 export default UsersTable;
