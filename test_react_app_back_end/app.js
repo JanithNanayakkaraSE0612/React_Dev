@@ -13,10 +13,16 @@ app.use(
 app.use(express.json());
 
 app.get('/users',(req,res) =>{
-    const resObj = [];
     controller.getAllUser(users =>{
         res.send(users);
-    })
+    });
+});
+
+app.get('/user' , (req,res)=>{
+    const id = req.query.id;
+    controller.getUserId(id, user=>{
+        res.send(user);
+    });
 })
 
 module.exports = app;
