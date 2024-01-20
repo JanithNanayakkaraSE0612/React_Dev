@@ -17,3 +17,7 @@ const getUserId = (id , cb) =>{
        cb(users);
     
 }
+
+exports.getAllUser = getAllUser;
+exports.getUserId = getUserId;
+
