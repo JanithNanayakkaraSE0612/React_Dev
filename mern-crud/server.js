@@ -4,6 +4,15 @@ const bodyParser = require('body-parser');
 
 const app = express();
 
+//import routes
+const postRoutes = require('./routes/posts');
+
+//app middleware
+app.use(bodyParser.json());
+
+//route middleware
+app.use(postRoutes);
+
 const PORT = 8000;
 const DB_URL ='mongodb+srv://crud:crudJanith@crud.1swk79w.mongodb.net/mernCrud?retryWrites=true&w=majority&appName=crud';
 
