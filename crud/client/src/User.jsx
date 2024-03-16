@@ -26,7 +26,10 @@ const User = () => {
                                 <td>{user.Name}</td>
                                 <td>{user.Email}</td>
                                 <td>{user.Age}</td>
-                                <td><button>Edit</button><button>Delete</button></td>
+                                <td>
+                                <Link to="/update" className='btn btn-success'>Update</Link>
+                                <Link to="/delete" className='btn btn-success'>Delete</Link>
+                                </td>
                             </tr>
                         })
                     }
