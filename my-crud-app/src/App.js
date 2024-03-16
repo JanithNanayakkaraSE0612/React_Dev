@@ -1,9 +1,11 @@
 import './App.css';
+import Home from './pages/Home';
+
 
 function App() {
   return (
-    <div className="">
-        <h1 className='text-red-700 text-lg text-center'>Janith</h1>
+    <div className="app">
+       <Home/>
     </div>
   );
 }
