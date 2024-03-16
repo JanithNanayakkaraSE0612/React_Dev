@@ -54,4 +54,16 @@ router.put('/post/update/:id',(req,res)=>{
     )
 });
 
+// delete post
+
+router.delete('/post/delete/:id',(req,res)=>{
+    posts.findByIdAndDelete(req.params.id).exec((err,deletePost)=>{
+        if(err) return res.status(400).json({
+            message:"Delete unsuccesful",err
+        });
+        return res.json({
+            message:"Delete Successfull",deletePost
+        });
+    });
+});
 module.exports = router;
