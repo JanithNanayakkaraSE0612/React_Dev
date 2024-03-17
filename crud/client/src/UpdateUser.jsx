@@ -1,19 +1,23 @@
-import axios from 'axios';
-import React from 'react' ;
+import React,{useState} from 'react' ;
 import { useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom' ;
-
+import axios from 'axios';
 
 const UpdateUser = () => {
-    const {id} = userParams()
+    const {id} = useParams()
     const [name, setName] = useState()
     const [email, setEmail] = useState()
     const [age, setAge] = useState()
     const navigatte = useNavigate() 
 
     useEffect(()=> {
-        axios.get('http://localhost:3001/' +id)
-        .then(result => setUsers(result.data))
+        axios.get('http://localhost:3001/getUser/' +id)
+        .then(result => {console.log(result)
+            setName(result.data.name)
+            setEmail(result.data.email)
+            setAge(result.data.age)
+        
+        })
         .catch(err => console.log(err))
     }, [])
      

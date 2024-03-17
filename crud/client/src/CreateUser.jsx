@@ -1,7 +1,7 @@
 import React from 'react'
-import User from './User'
+// import User from './User'
 import axios from 'axios'
-import {userNavigate} from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 
 
@@ -9,7 +9,7 @@ const CreateUser = () => {
     const [name, setName] = useState()
     const [email, setEmail] = userState()
     const [age, setAge] = userState()
-    const navigate = userNavigate()
+    const navigate = useNavigate()
 
     const Submit = (e) => {
        e.PreventDefault();
