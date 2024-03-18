@@ -5,9 +5,9 @@ import axios from 'axios';
 
 const UpdateUser = () => {
     const {id} = useParams()
-    const [name, setName] = useState()
-    const [email, setEmail] = useState()
-    const [age, setAge] = useState()
+    const [name, setName] = useState('')
+    const [email, setEmail] = useState('')
+    const [age, setAge] = useState('30')
     const navigatte = useNavigate() 
 
     useEffect(()=> {

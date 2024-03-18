@@ -13,6 +13,13 @@ const User = () => {
         .catch(err => console.log(err))
 
     }, [])
+
+    const handleDelete = (id) =>{
+        axios.delete('http://localhost:3001/deleteUser/'+id)
+        .then(res => {console.log(res)
+         window.location.reload()})
+        .catch(err => console.log(err))
+    }
   return (
     <div className='d-flex vh-100 bg-primary justify-content-center align-items-center '>
         <div className='w-50 bg-white rounded p-3'>
@@ -36,7 +43,7 @@ const User = () => {
                                 <td>
                                 <Link to=  {`/update/${user._id}`} className='btn btn-success'>Update</Link>
                     
-                                <button className= 'btn btn-danger' >Delete</button>
+                                <button className= 'btn btn-danger' onClick={(e)=> handleDelete(user._id)}>Delete</button>
                                 </td>
                             </tr>
                         })
@@ -49,4 +56,4 @@ const User = () => {
 }
 
 export default User
-    User
+    
