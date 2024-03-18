@@ -29,15 +29,18 @@ const UpdateUser = () => {
                 <h2>Update User</h2>
                 <div className='mb-2'>
                     <label htmlFor="">Name</label>
-                    <input type="text" placeholder='Enter Name' className='form-control ' />
+                    <input type="text" placeholder='Enter Name' className='form-control ' 
+                    value={name}/>
                 </div>
                 <div className='mb-2'>
                     <label htmlFor="">Email</label>
-                    <input type="email" placeholder='Enter Email' className='form-control ' />
+                    <input type="email" placeholder='Enter Email' className='form-control ' 
+                    value={email}/>
                 </div>
                 <div className='mb-2'>
                     <label htmlFor="">Age</label>
-                    <input type="text" placeholder='Enter Age' className='form-control ' />
+                    <input type="text" placeholder='Enter Age' className='form-control '
+                    value={age} />
                 </div>
                 <button className='btn btn-success '>Submit</button>
             </form>
