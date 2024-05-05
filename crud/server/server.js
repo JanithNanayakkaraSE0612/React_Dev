@@ -9,8 +9,8 @@ const app = express()
 app.use(cors())
 app.use(express.json())
 
+// const DB_URL ='mongodb+srv://janith:userCrud@user.badthcc.mongodb.net/user?retryWrites=true&w=majority&appName=user';
 const DB_URL ='mongodb+srv://janith:userCrud@user.badthcc.mongodb.net/user?retryWrites=true&w=majority&appName=user';
-
 //get users
 app.get('/', (req, res) => {
     UserModel.find({})
